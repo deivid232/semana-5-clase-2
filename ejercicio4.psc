@@ -1,17 +1,17 @@
-Proceso num_mayor 
-    Escribir  "Ingrese un numero: ";
-    Leer num1;
-    Escribir  "Ingrese otro numero: ";
-    Leer num2;
-    Escribir  "Ingrese un ultimo numero: ";
-    Leer num3;
-    Si num1>num2 Entonces
-        mayor <- num1;
-    SiNo
-        mayor <- num2; 
-    FinSi
-    Si num3>mayor Entonces
-        mayor <- num3;
-    FinSi
-    Escribir "El mayor de los 3 numeros ingresados es: ", mayor;
-FinProceso
+Algoritmo num_mayor
+	Escribir "ingrese primer numero"
+	Leer n1
+	Escribir "ingrese segundo numero"
+	Leer n2
+	Escribir "ingrese tercer numero"
+	Leer n3
+	si n1>n2 y n1>n3 Entonces
+		escribir n1 , "es mayor"
+	SiNo
+		si n2>n1 y n2>n3
+			escribir n2 , "es mayor"
+		SiNo
+			Escribir n3 , " es mayor"
+		FinSi
+	FinSi
+FinAlgoritmo
