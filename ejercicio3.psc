@@ -1,17 +1,19 @@
-
-Proceso sin_titulo
-	Definir a,i,c Como Entero;
-	c<-0;
-	Escribir "Ingrese un numero";
-	leer a;
-	Para i<-1 Hasta a Con Paso 1 Hacer
-		si a mod i=0 Entonces
-			c<-c+1;
-		FinSi
-	FinPara
-	si c==2 Entonces
-		Escribir "Es un numero primo";
-	SiNo
-		Escribir "No es un numero primo";
+Algoritmo calculadora
+	Escribir "hola"
+	Escribir "ingresa el primer numero"
+	Leer num1
+	Escribir "ingresa el segundo numero"
+	Leer num2
+	Escribir "quieres sumar o restar"
+	leer operacion 
+	Si operacion == "+" Entonces
+		res<-num1+num2
+		Escribir "tu resultado es " , res
+	fin si
+	si operacion == "-" entonces
+		res<-num1-num2
+		Escribir "tu resultado es " , res
 	FinSi
-FinProceso
+		
+
+FinAlgoritmo
