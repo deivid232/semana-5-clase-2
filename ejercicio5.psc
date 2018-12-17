@@ -1,43 +1,18 @@
-Algoritmo ejercicio5
-	Escribir "Juguemos al Piedra (0), papel(1) o tijera(2)";
-	Escribir "Elige y gana...";
-	Leer valorx
-	jugada= azar(3)
-	tijera <- 0
-	papel <- 1
-	piedra <- 2
-	
-	Si valorx=tijera Entonces
-		Si jugada=tijera Entonces
-			Escribir "Empate"
-		Fin Si
-		Si jugada=papel Entonces
-			Escribir "Ganaste";
-		Fin Si
-		Si jugada=piedra Entonces
-			Escribir "Perdiste";
-		Fin Si
-	Fin Si
-	Si valorx=papel Entonces
-		Si jugada=tijera Entonces
-			Escribir "Pediste"
-		Fin Si
-		Si jugada=papel Entonces
-			Escribir "Empate";
-		Fin Si
-		Si jugada=piedra Entonces
-			Escribir "Ganaste";
-		Fin Si
-	Fin Si
-	Si valorx=piedra Entonces
-		Si jugada=tijera Entonces
-			Escribir "Ganaste"
-		Fin Si
-		Si jugada=papel Entonces
-			Escribir "Perdiste";
-		Fin Si
-		Si jugada=piedra Entonces
-			Escribir "Empate";
-		Fin Si
-	Fin Si	
+Algoritmo numeros_primos
+	Escribir "ingrese un numero para saber si es primo"
+	leer num
+	num2<-2
+	x<- verdadero
+	Mientras num2 != num-1 y x == Verdadero Hacer
+		si num%num2 == 0 Entonces
+			x <- Falso
+		FinSi
+		num2<-num2+1 
+		
+	Fin Mientras
+	si x == Verdadero entonces 
+		escribir "es un numero primo"
+	SiNo
+		escribir "no es un numero primo"
+	FinSi
 FinAlgoritmo
