@@ -1,9 +1,11 @@
-Algoritmo ejericico1
-	Repetir
-		Escribir "Ingrese numero entre 0 y 15";
-		Leer num;
-		Si num<0 o num>15 Entonces
-			Escribir "Numero invalido";
-		Fin Si
-	Hasta Que num>=0 y num<=15;
-FinAlgoritmo
+Proceso numero_random
+	Escribir "ingresa tu numero"
+	Leer num
+	Mientras num >15 o num <0 Hacer
+		Escribir "perdiste, vamos otra vez"
+		Leer num
+	Fin Mientras
+		
+	Escribir "Lo lograste"
+	
+FinProceso
